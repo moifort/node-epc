@@ -28,7 +28,7 @@ epc.parse('30344B5A1C78902000000001')
 	});
 
 // Parse using a specific encoding
-epc.getParser('SGTIN')
+epc.getParser('sgtin') // must be in lowercase
 	.then(function(sgtin) {
 		sgtin.parse('30344B5A1C78902000000001')
 			.then(function(parsed) {
